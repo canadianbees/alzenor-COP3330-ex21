@@ -4,6 +4,7 @@
  */
 
 package org.example;
+
 import java.util.Scanner;
 
 public class Calendar {
@@ -21,45 +22,48 @@ public class Calendar {
 
     public void findMonth()
     {
+        String month = null;
+
         //prints the corresponding month using a switch case
-        switch(this.month)
-        {
+        switch (this.month) {
             case 1:
-                System.out.println("The name of the month is January.");
+                month = "January";
                 break;
             case 2:
-                System.out.println("The name of the month is February.");
+                month = "February";
                 break;
             case 3:
-                System.out.println("The name of the month is March.");
+                month = "March";
                 break;
             case 4:
-                System.out.println("The name of the month is April.");
+                month = "April";
                 break;
             case 5:
-                System.out.println("The name of the month is May.");
+                month = "May";
                 break;
             case 6:
-                System.out.println("The name of the month is June.");
+                month = "June";
                 break;
             case 7:
-                System.out.println("The name of the month is July.");
+                month = "July";
                 break;
             case 8:
-                System.out.println("The name of the month is August.");
+                month = "August";
                 break;
             case 9:
-                System.out.println("The name of the month is September.");
+                month = "September";
                 break;
             case 10:
-                System.out.println("The name of the month is October.");
+                month = "October";
                 break;
             case 11:
-                System.out.println("The name of the month is November.");
+                month = "November";
                 break;
             case 12:
-                System.out.println("The name of the month is December.");
+                month = "December";
                 break;
         }
+
+        System.out.print("The name of the month is " +month+".");
     }
 }
